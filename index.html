@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        form {   
+            display: flex;         
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mi Primer Formulario</h1>
+
+    <form action="submit_form.php" method="post">
+        <div class="image-container">
+            <img height="200px" width="200px" src="https://avatars.githubusercontent.com/u/8529231?s=280&v=4" alt="DEVF">
+            <img height="200px" width="200px" src="https://www.escom.ipn.mx/images/logoESCOM2x.png" alt="ESCOM">
+            <img height="200px" width="200px" src="https://camo.githubusercontent.com/21bb8ae3629c4852404841252c65baa38426e4c0d01a68a0f7e6fd121d4649dc/68747470733a2f2f7777772e69696d2e66722f65636f6c652d7765622f77702d636f6e74656e742f75706c6f6164732f323031372f30312f48544d4c352e6a7067" alt="HTML CSS">
+        </div>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
